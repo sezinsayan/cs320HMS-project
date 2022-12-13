@@ -138,7 +138,7 @@ public class homePagee extends javax.swing.JFrame {
     }
 
     private void checkInButtonActionPerformed(java.awt.event.ActionEvent evt) {
-        //     new checkIn().setVisible(true);
+        new CustomerCheckIn().setVisible(true);
     }
 
     private void logoutButtonActionPerformed(java.awt.event.ActionEvent evt) {

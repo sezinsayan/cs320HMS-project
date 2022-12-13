@@ -162,6 +162,8 @@ public class ManageRoom extends javax.swing.JPanel {
     }
 
 
+
+
     // Variables declaration - do not modify                     
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
