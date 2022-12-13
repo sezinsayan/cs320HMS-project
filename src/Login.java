@@ -7,8 +7,6 @@
  *
  * @author sezinsayan
  */
-
-import project.Select;
 public class Login extends javax.swing.JFrame {
 
     /**
@@ -67,7 +65,6 @@ public class Login extends javax.swing.JFrame {
         gridBagConstraints.insets = new java.awt.Insets(28, 158, 0, 0);
         getContentPane().add(jLabel3, gridBagConstraints);
 
-        jTextField1.setText("jTextField1");
         jTextField1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField1ActionPerformed(evt);
@@ -117,7 +114,8 @@ public class Login extends javax.swing.JFrame {
     }
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {
-        // TODO add your handling code here:
+        setVisible(false);
+
     }
 
     private void jPasswordField1ActionPerformed(java.awt.event.ActionEvent evt) {
@@ -162,4 +160,3 @@ public class Login extends javax.swing.JFrame {
     private javax.swing.JTextField jTextField1;
     // End of variables declaration
 }
-
