@@ -7,6 +7,7 @@
  *
  * @author dogasezgin
  */
+import javax.swing.*;
 public class ManageRoom extends javax.swing.JPanel {
 
     /**

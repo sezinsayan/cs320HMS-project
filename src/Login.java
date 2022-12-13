@@ -115,6 +115,7 @@ public class Login extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {
         setVisible(false);
+        new homePagee().setVisible(true);
 
     }
 

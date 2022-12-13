@@ -133,7 +133,8 @@ public class homePagee extends javax.swing.JFrame {
     }// </editor-fold>
 
     private void manageRoomButtonActionPerformed(java.awt.event.ActionEvent evt) {
-        //  new manageRoom().setVisible(true);
+
+        new ManageRoom().setVisible(true);
     }
 
     private void checkInButtonActionPerformed(java.awt.event.ActionEvent evt) {
