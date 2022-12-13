@@ -145,7 +145,7 @@ public class homePagee extends javax.swing.JFrame {
 
         if (st == 0){
             setVisible(false);
-            new loginPage().setVisible(true);
+            new Login().setVisible(true);
         }
     }
 
