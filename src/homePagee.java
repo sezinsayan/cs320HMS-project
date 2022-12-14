@@ -35,6 +35,8 @@ public class homePagee extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(255, 153, 153));
+        setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        setLocationByPlatform(true);
         setUndecorated(true);
         setPreferredSize(new java.awt.Dimension(1366, 768));
         setResizable(false);
@@ -133,7 +135,6 @@ public class homePagee extends javax.swing.JFrame {
     }// </editor-fold>
 
     private void manageRoomButtonActionPerformed(java.awt.event.ActionEvent evt) {
-
         new ManageRoom().setVisible(true);
     }
 
@@ -147,6 +148,8 @@ public class homePagee extends javax.swing.JFrame {
         if (st == 0){
             setVisible(false);
             new Login().setVisible(true);
+        } else{
+
         }
     }
 
@@ -155,11 +158,13 @@ public class homePagee extends javax.swing.JFrame {
 
         if (st == 0){
             System.exit(0);
+        } else{
+
         }
     }
 
     private void checkOutButtonActionPerformed(java.awt.event.ActionEvent evt) {
-        //    new checkOut().setVisible(true);
+        //new checkOut().setVisible(true);
     }
 
     /**
@@ -205,4 +210,3 @@ public class homePagee extends javax.swing.JFrame {
     private javax.swing.JButton manageRoomButton;
     // End of variables declaration
 }
-

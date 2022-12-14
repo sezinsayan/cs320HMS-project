@@ -78,7 +78,11 @@ public class CustomerCheckOut extends javax.swing.JFrame {
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
         gridBagConstraints.gridy = 0;
+<<<<<<< HEAD
         gridBagConstraints.gridwidth = 6;
+=======
+        gridBagConstraints.gridwidth = 5;
+>>>>>>> 945fdbca4005c9c6ded1fb563f779cdccb04d65c
         gridBagConstraints.gridheight = 2;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
         gridBagConstraints.insets = new java.awt.Insets(15, 20, 0, 0);
@@ -86,20 +90,35 @@ public class CustomerCheckOut extends javax.swing.JFrame {
 
         jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/close.png"))); // NOI18N
         gridBagConstraints = new java.awt.GridBagConstraints();
+<<<<<<< HEAD
         gridBagConstraints.gridx = 21;
         gridBagConstraints.gridy = 0;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
         gridBagConstraints.insets = new java.awt.Insets(20, 24, 0, 0);
+=======
+        gridBagConstraints.gridx = 20;
+        gridBagConstraints.gridy = 0;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        gridBagConstraints.insets = new java.awt.Insets(15, 77, 0, 0);
+>>>>>>> 945fdbca4005c9c6ded1fb563f779cdccb04d65c
         getContentPane().add(jButton1, gridBagConstraints);
 
         jLabel2.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel2.setText("Room Number");
         gridBagConstraints = new java.awt.GridBagConstraints();
+<<<<<<< HEAD
         gridBagConstraints.gridx = 7;
         gridBagConstraints.gridy = 2;
         gridBagConstraints.gridwidth = 2;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
         gridBagConstraints.insets = new java.awt.Insets(28, 151, 0, 0);
+=======
+        gridBagConstraints.gridx = 6;
+        gridBagConstraints.gridy = 2;
+        gridBagConstraints.gridwidth = 3;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        gridBagConstraints.insets = new java.awt.Insets(28, 131, 0, 0);
+>>>>>>> 945fdbca4005c9c6ded1fb563f779cdccb04d65c
         getContentPane().add(jLabel2, gridBagConstraints);
 
         jTextField1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
@@ -112,7 +131,11 @@ public class CustomerCheckOut extends javax.swing.JFrame {
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 9;
         gridBagConstraints.gridy = 2;
+<<<<<<< HEAD
         gridBagConstraints.gridwidth = 6;
+=======
+        gridBagConstraints.gridwidth = 5;
+>>>>>>> 945fdbca4005c9c6ded1fb563f779cdccb04d65c
         gridBagConstraints.gridheight = 2;
         gridBagConstraints.ipadx = 66;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
@@ -124,7 +147,11 @@ public class CustomerCheckOut extends javax.swing.JFrame {
         jButton2.setForeground(new java.awt.Color(255, 255, 255));
         jButton2.setText("Search");
         gridBagConstraints = new java.awt.GridBagConstraints();
+<<<<<<< HEAD
         gridBagConstraints.gridx = 15;
+=======
+        gridBagConstraints.gridx = 14;
+>>>>>>> 945fdbca4005c9c6ded1fb563f779cdccb04d65c
         gridBagConstraints.gridy = 2;
         gridBagConstraints.gridheight = 3;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
@@ -142,16 +169,27 @@ public class CustomerCheckOut extends javax.swing.JFrame {
                         "ID", "Name", "Phone Number", "Gender", "Email", "ID Proof", "Address", "Check In Date", "Room Number", "Bed", "Room Type", "Total Payment"
                 }
         ));
+<<<<<<< HEAD
         jTable1.setMaximumSize(new java.awt.Dimension(1366, 768));
+=======
+>>>>>>> 945fdbca4005c9c6ded1fb563f779cdccb04d65c
         jScrollPane1.setViewportView(jTable1);
 
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
+<<<<<<< HEAD
         gridBagConstraints.gridy = 11;
         gridBagConstraints.gridwidth = 23;
         gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
         gridBagConstraints.ipadx = 1338;
         gridBagConstraints.ipady = 377;
+=======
+        gridBagConstraints.gridy = 10;
+        gridBagConstraints.gridwidth = 22;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
+        gridBagConstraints.ipadx = 1283;
+        gridBagConstraints.ipady = 251;
+>>>>>>> 945fdbca4005c9c6ded1fb563f779cdccb04d65c
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
         gridBagConstraints.weightx = 1.0;
         gridBagConstraints.weighty = 1.0;
@@ -164,9 +202,14 @@ public class CustomerCheckOut extends javax.swing.JFrame {
         gridBagConstraints.gridx = 0;
         gridBagConstraints.gridy = 5;
         gridBagConstraints.gridwidth = 3;
+<<<<<<< HEAD
         gridBagConstraints.gridheight = 2;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
         gridBagConstraints.insets = new java.awt.Insets(33, 50, 0, 0);
+=======
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        gridBagConstraints.insets = new java.awt.Insets(27, 20, 0, 0);
+>>>>>>> 945fdbca4005c9c6ded1fb563f779cdccb04d65c
         getContentPane().add(jLabel3, gridBagConstraints);
 
         jTextField2.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
@@ -177,20 +220,35 @@ public class CustomerCheckOut extends javax.swing.JFrame {
         });
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
+<<<<<<< HEAD
         gridBagConstraints.gridy = 7;
         gridBagConstraints.gridwidth = 7;
         gridBagConstraints.ipadx = 146;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
         gridBagConstraints.insets = new java.awt.Insets(10, 50, 0, 0);
+=======
+        gridBagConstraints.gridy = 6;
+        gridBagConstraints.gridwidth = 6;
+        gridBagConstraints.ipadx = 196;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        gridBagConstraints.insets = new java.awt.Insets(12, 20, 0, 0);
+>>>>>>> 945fdbca4005c9c6ded1fb563f779cdccb04d65c
         getContentPane().add(jTextField2, gridBagConstraints);
 
         jLabel4.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel4.setText("Check In Date");
         gridBagConstraints = new java.awt.GridBagConstraints();
+<<<<<<< HEAD
         gridBagConstraints.gridx = 7;
         gridBagConstraints.gridy = 5;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
         gridBagConstraints.insets = new java.awt.Insets(23, 150, 0, 0);
+=======
+        gridBagConstraints.gridx = 6;
+        gridBagConstraints.gridy = 5;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        gridBagConstraints.insets = new java.awt.Insets(27, 82, 0, 0);
+>>>>>>> 945fdbca4005c9c6ded1fb563f779cdccb04d65c
         getContentPane().add(jLabel4, gridBagConstraints);
 
         jTextField3.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
@@ -200,37 +258,64 @@ public class CustomerCheckOut extends javax.swing.JFrame {
             }
         });
         gridBagConstraints = new java.awt.GridBagConstraints();
+<<<<<<< HEAD
         gridBagConstraints.gridx = 7;
         gridBagConstraints.gridy = 7;
         gridBagConstraints.gridwidth = 5;
         gridBagConstraints.ipadx = 146;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
         gridBagConstraints.insets = new java.awt.Insets(10, 150, 0, 0);
+=======
+        gridBagConstraints.gridx = 6;
+        gridBagConstraints.gridy = 6;
+        gridBagConstraints.gridwidth = 4;
+        gridBagConstraints.ipadx = 164;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        gridBagConstraints.insets = new java.awt.Insets(12, 82, 0, 0);
+>>>>>>> 945fdbca4005c9c6ded1fb563f779cdccb04d65c
         getContentPane().add(jTextField3, gridBagConstraints);
 
         jLabel5.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel5.setText("Check Out Date (Today)");
         gridBagConstraints = new java.awt.GridBagConstraints();
+<<<<<<< HEAD
         gridBagConstraints.gridx = 16;
         gridBagConstraints.gridy = 5;
         gridBagConstraints.gridwidth = 2;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
         gridBagConstraints.insets = new java.awt.Insets(23, 19, 0, 0);
+=======
+        gridBagConstraints.gridx = 14;
+        gridBagConstraints.gridy = 5;
+        gridBagConstraints.gridwidth = 3;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        gridBagConstraints.insets = new java.awt.Insets(27, 18, 0, 0);
+>>>>>>> 945fdbca4005c9c6ded1fb563f779cdccb04d65c
         getContentPane().add(jLabel5, gridBagConstraints);
 
         jTextField4.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         gridBagConstraints = new java.awt.GridBagConstraints();
+<<<<<<< HEAD
         gridBagConstraints.gridx = 16;
         gridBagConstraints.gridy = 7;
         gridBagConstraints.gridwidth = 3;
         gridBagConstraints.ipadx = 136;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
         gridBagConstraints.insets = new java.awt.Insets(10, 19, 0, 0);
+=======
+        gridBagConstraints.gridx = 14;
+        gridBagConstraints.gridy = 6;
+        gridBagConstraints.gridwidth = 4;
+        gridBagConstraints.ipadx = 123;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        gridBagConstraints.insets = new java.awt.Insets(12, 18, 0, 0);
+>>>>>>> 945fdbca4005c9c6ded1fb563f779cdccb04d65c
         getContentPane().add(jTextField4, gridBagConstraints);
 
         jLabel6.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel6.setText("Customer Phone Number");
         gridBagConstraints = new java.awt.GridBagConstraints();
+<<<<<<< HEAD
         gridBagConstraints.gridx = 19;
         gridBagConstraints.gridy = 5;
         gridBagConstraints.gridwidth = 2;
@@ -238,94 +323,175 @@ public class CustomerCheckOut extends javax.swing.JFrame {
         gridBagConstraints.ipadx = 37;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
         gridBagConstraints.insets = new java.awt.Insets(33, 110, 0, 0);
+=======
+        gridBagConstraints.gridx = 18;
+        gridBagConstraints.gridy = 5;
+        gridBagConstraints.gridwidth = 2;
+        gridBagConstraints.ipadx = 37;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        gridBagConstraints.insets = new java.awt.Insets(27, 114, 0, 0);
+>>>>>>> 945fdbca4005c9c6ded1fb563f779cdccb04d65c
         getContentPane().add(jLabel6, gridBagConstraints);
 
         jTextField5.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         gridBagConstraints = new java.awt.GridBagConstraints();
+<<<<<<< HEAD
         gridBagConstraints.gridx = 19;
         gridBagConstraints.gridy = 7;
         gridBagConstraints.gridwidth = 2;
         gridBagConstraints.ipadx = 142;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
         gridBagConstraints.insets = new java.awt.Insets(10, 110, 0, 0);
+=======
+        gridBagConstraints.gridx = 18;
+        gridBagConstraints.gridy = 6;
+        gridBagConstraints.gridwidth = 2;
+        gridBagConstraints.ipadx = 142;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        gridBagConstraints.insets = new java.awt.Insets(12, 114, 0, 0);
+>>>>>>> 945fdbca4005c9c6ded1fb563f779cdccb04d65c
         getContentPane().add(jTextField5, gridBagConstraints);
 
         jLabel7.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel7.setText("Price Per Day");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
+<<<<<<< HEAD
         gridBagConstraints.gridy = 8;
         gridBagConstraints.gridwidth = 2;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
         gridBagConstraints.insets = new java.awt.Insets(24, 50, 0, 0);
+=======
+        gridBagConstraints.gridy = 7;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        gridBagConstraints.insets = new java.awt.Insets(36, 20, 0, 0);
+>>>>>>> 945fdbca4005c9c6ded1fb563f779cdccb04d65c
         getContentPane().add(jLabel7, gridBagConstraints);
 
         jLabel8.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel8.setText("Number of Days Stay");
         gridBagConstraints = new java.awt.GridBagConstraints();
+<<<<<<< HEAD
         gridBagConstraints.gridx = 7;
         gridBagConstraints.gridy = 8;
         gridBagConstraints.gridwidth = 3;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
         gridBagConstraints.insets = new java.awt.Insets(24, 150, 0, 0);
+=======
+        gridBagConstraints.gridx = 6;
+        gridBagConstraints.gridy = 7;
+        gridBagConstraints.gridwidth = 2;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        gridBagConstraints.insets = new java.awt.Insets(36, 82, 0, 0);
+>>>>>>> 945fdbca4005c9c6ded1fb563f779cdccb04d65c
         getContentPane().add(jLabel8, gridBagConstraints);
 
         jLabel9.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel9.setText("Total Payment");
         gridBagConstraints = new java.awt.GridBagConstraints();
+<<<<<<< HEAD
         gridBagConstraints.gridx = 16;
         gridBagConstraints.gridy = 8;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
         gridBagConstraints.insets = new java.awt.Insets(24, 19, 0, 0);
+=======
+        gridBagConstraints.gridx = 14;
+        gridBagConstraints.gridy = 7;
+        gridBagConstraints.gridwidth = 2;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        gridBagConstraints.insets = new java.awt.Insets(36, 18, 0, 0);
+>>>>>>> 945fdbca4005c9c6ded1fb563f779cdccb04d65c
         getContentPane().add(jLabel9, gridBagConstraints);
 
         jTextField6.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
+<<<<<<< HEAD
         gridBagConstraints.gridy = 9;
         gridBagConstraints.gridwidth = 7;
         gridBagConstraints.ipadx = 146;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
         gridBagConstraints.insets = new java.awt.Insets(20, 50, 0, 0);
+=======
+        gridBagConstraints.gridy = 8;
+        gridBagConstraints.gridwidth = 6;
+        gridBagConstraints.ipadx = 196;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        gridBagConstraints.insets = new java.awt.Insets(18, 20, 0, 0);
+>>>>>>> 945fdbca4005c9c6ded1fb563f779cdccb04d65c
         getContentPane().add(jTextField6, gridBagConstraints);
 
         jLabel10.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel10.setText("Email");
         gridBagConstraints = new java.awt.GridBagConstraints();
+<<<<<<< HEAD
         gridBagConstraints.gridx = 19;
         gridBagConstraints.gridy = 8;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
         gridBagConstraints.insets = new java.awt.Insets(24, 110, 0, 0);
+=======
+        gridBagConstraints.gridx = 18;
+        gridBagConstraints.gridy = 7;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        gridBagConstraints.insets = new java.awt.Insets(36, 114, 0, 0);
+>>>>>>> 945fdbca4005c9c6ded1fb563f779cdccb04d65c
         getContentPane().add(jLabel10, gridBagConstraints);
 
         jTextField7.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         gridBagConstraints = new java.awt.GridBagConstraints();
+<<<<<<< HEAD
         gridBagConstraints.gridx = 7;
         gridBagConstraints.gridy = 9;
         gridBagConstraints.gridwidth = 5;
         gridBagConstraints.ipadx = 146;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
         gridBagConstraints.insets = new java.awt.Insets(20, 150, 0, 0);
+=======
+        gridBagConstraints.gridx = 6;
+        gridBagConstraints.gridy = 8;
+        gridBagConstraints.gridwidth = 4;
+        gridBagConstraints.ipadx = 164;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        gridBagConstraints.insets = new java.awt.Insets(18, 82, 0, 0);
+>>>>>>> 945fdbca4005c9c6ded1fb563f779cdccb04d65c
         getContentPane().add(jTextField7, gridBagConstraints);
 
         jTextField8.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         gridBagConstraints = new java.awt.GridBagConstraints();
+<<<<<<< HEAD
         gridBagConstraints.gridx = 16;
         gridBagConstraints.gridy = 9;
         gridBagConstraints.gridwidth = 3;
         gridBagConstraints.ipadx = 136;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
         gridBagConstraints.insets = new java.awt.Insets(20, 19, 0, 0);
+=======
+        gridBagConstraints.gridx = 14;
+        gridBagConstraints.gridy = 8;
+        gridBagConstraints.gridwidth = 4;
+        gridBagConstraints.ipadx = 123;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        gridBagConstraints.insets = new java.awt.Insets(18, 18, 0, 0);
+>>>>>>> 945fdbca4005c9c6ded1fb563f779cdccb04d65c
         getContentPane().add(jTextField8, gridBagConstraints);
 
         jTextField9.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         gridBagConstraints = new java.awt.GridBagConstraints();
+<<<<<<< HEAD
         gridBagConstraints.gridx = 19;
         gridBagConstraints.gridy = 9;
         gridBagConstraints.gridwidth = 2;
         gridBagConstraints.ipadx = 142;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
         gridBagConstraints.insets = new java.awt.Insets(20, 110, 0, 0);
+=======
+        gridBagConstraints.gridx = 18;
+        gridBagConstraints.gridy = 8;
+        gridBagConstraints.gridwidth = 2;
+        gridBagConstraints.ipadx = 142;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        gridBagConstraints.insets = new java.awt.Insets(18, 114, 0, 0);
+>>>>>>> 945fdbca4005c9c6ded1fb563f779cdccb04d65c
         getContentPane().add(jTextField9, gridBagConstraints);
 
         jButton3.setBackground(new java.awt.Color(102, 255, 255));
@@ -334,9 +500,16 @@ public class CustomerCheckOut extends javax.swing.JFrame {
         jButton3.setText("Check Out");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
+<<<<<<< HEAD
         gridBagConstraints.gridy = 10;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
         gridBagConstraints.insets = new java.awt.Insets(24, 20, 0, 0);
+=======
+        gridBagConstraints.gridy = 9;
+        gridBagConstraints.gridwidth = 2;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        gridBagConstraints.insets = new java.awt.Insets(18, 20, 0, 0);
+>>>>>>> 945fdbca4005c9c6ded1fb563f779cdccb04d65c
         getContentPane().add(jButton3, gridBagConstraints);
 
         jButton4.setBackground(new java.awt.Color(102, 255, 255));
@@ -344,11 +517,18 @@ public class CustomerCheckOut extends javax.swing.JFrame {
         jButton4.setForeground(new java.awt.Color(255, 255, 255));
         jButton4.setText("Clear");
         gridBagConstraints = new java.awt.GridBagConstraints();
+<<<<<<< HEAD
         gridBagConstraints.gridx = 1;
         gridBagConstraints.gridy = 10;
         gridBagConstraints.gridwidth = 4;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
         gridBagConstraints.insets = new java.awt.Insets(24, 18, 0, 0);
+=======
+        gridBagConstraints.gridx = 3;
+        gridBagConstraints.gridy = 9;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        gridBagConstraints.insets = new java.awt.Insets(18, 8, 0, 0);
+>>>>>>> 945fdbca4005c9c6ded1fb563f779cdccb04d65c
         getContentPane().add(jButton4, gridBagConstraints);
 
         pack();
