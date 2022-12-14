@@ -1,3 +1,12 @@
+import java.sql.*;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Date;
+
+import project.*;
+
+import javax.swing.*;
+import javax.swing.table.DefaultTableModel;
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
@@ -83,6 +92,13 @@ public class CustomerCheckOut extends javax.swing.JFrame {
                 gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
                 gridBagConstraints.insets = new java.awt.Insets(15, 20, 0, 0);
                 getContentPane().add(jLabel1, gridBagConstraints);
+
+                jButton1.setText("Close");
+                jButton1.addActionListener(new java.awt.event.ActionListener() {
+                        public void actionPerformed(java.awt.event.ActionEvent evt) {
+                                jButton1ActionPerformed(evt);
+                        }
+                });
 
                 jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/close.png"))); // NOI18N
                 gridBagConstraints = new java.awt.GridBagConstraints();
@@ -366,6 +382,94 @@ public class CustomerCheckOut extends javax.swing.JFrame {
         private void jTextField3ActionPerformed(java.awt.event.ActionEvent evt) {
                 // TODO add your handling code here:
         }
+
+        private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {
+                // TODO add your handling code here:
+                setVisible(false);
+        }
+
+        private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {
+                // TODO add your handling code here:
+                String roomNo = jTextField1.getText();
+                try
+                {
+                        ResultSet rs = Select.getData("select *from customer where roomNo='"+roomNo+"' and checkout is NULL");
+                        if(rs.next())
+                        {
+                                jTextField1.setEditable(false);
+                                id=rs.getInt(1);
+                                jTextField2.setText(rs.getString(2));
+                                jTextField3.setText(rs.getString(9));
+                                jTextField5.setText(rs.getString(3));
+                                jTextField6.setText(rs.getString(13));
+
+                                SimpleDateFormat myformat = new SimpleDateFormat("dd/MM/yyyy");
+                                Calendar cal = Calendar.getInstance();
+                                jTextField4.setText(myformat.format(cal.getTime()));
+                                String dateBeforeString = rs.getString(9);
+                                Date dateBefore = myformat.parse(dateBeforeString);
+                                String dateAfterString = myformat.format(cal.getTime());
+                                Date dateAfter = myformat.parse(dateAfterString);
+                                long differenceBetweenDates = dateAfter.getTime() - dateBefore.getTime();
+                                int numberOfDaysStay = (int) (differenceBetweenDates/(1000*60*60*24));
+                                //Condition of staying but no night staying
+                                if (numberOfDaysStay == 0)
+                                        numberOfDaysStay = 1;
+                                jTextField7.setText(String.valueOf(numberOfDaysStay));
+                                float price = Float.parseFloat(jTextField6.getText());
+
+                                jTextField8.setText(String.valueOf(numberOfDaysStay*price));
+                                jTextField9.setText(rs.getString(6));
+                                roomType = rs.getString(12);
+                                bed = rs.getString(11);
+                        }
+                        else {
+                                JOptionPane.showMessageDialog(null,"Room Number is not booked OR Room Number does not exist");
+                        }
+                }
+                catch (Exception e)
+                {
+                        JOptionPane.showMessageDialog(null,e);
+                }
+        }
+
+
+        private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {
+                // TODO add your handling code here:
+                setVisible(false);
+                new CustomerCheckOut().setVisible(true);
+        }
+
+        private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {
+                String name = jTextField2.getText();
+                String phoneNumber = jTextField5.getText();
+                String email = jTextField9.getText();
+
+                String checkOut = jTextField4.getText();
+                String numberOfDaysSta = jTextField7.getText();
+                String totalPayment = jTextField8.getText();
+                roomNumber = jTextField7.getText();
+                Query="update customer set numberOfDaysSta='"+numberOfDaysSta+"',totalPayment='"+totalPayment+"',checkOut='"+checkOut+"' where id='"+id+"'";
+                InsertUpdateDelete.setData(Query,"");
+                Query="update room set Status='Not Booked' where roomNumber='"+roomNumber+"'";
+                InsertUpdateDelete.setData(Query,"");
+
+        }
+
+//        private void formComponentShown(java.awt.event.ActionEvent evt){
+//                // TODO add your handling code here:
+//                ResultSet rs = Select.getData("select *from customer where checkOut is NULL");
+//                DefaultTableModel dtmodel=(DefaultTableModel)jTable1.getModel();
+//                try {
+//                        while(rs.next()){
+//                                dtmodel.addRow(new Object[]{rs.getString(1),rs.getString(2),rs.getString(3),rs.getString(4),rs.getString(5),rs.getString(6),rs.getString(7),rs.getString(8),rs.getString(9),rs.getString(10),rs.getString(11),rs.getString(12)});
+//                        }
+//                        rs.close();
+//                }
+//                catch (Exception e){
+//                        JOptionPane.showMessageDialog(null, e);
+//                }
+//        }
 
         /**
          * @param args the command line arguments
