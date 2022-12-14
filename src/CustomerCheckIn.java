@@ -86,9 +86,11 @@ public class CustomerCheckIn extends javax.swing.JFrame {
         jButton3 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         setLocation(new java.awt.Point(50, 118));
         setUndecorated(true);
+        setResizable(false);
         getContentPane().setLayout(new java.awt.GridBagLayout());
 
         jLabel1.setFont(new java.awt.Font("Algerian", 1, 14)); // NOI18N
@@ -101,7 +103,7 @@ public class CustomerCheckIn extends javax.swing.JFrame {
         gridBagConstraints.gridheight = 2;
         gridBagConstraints.ipady = 17;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
-        gridBagConstraints.insets = new java.awt.Insets(15, 56, 0, 0);
+        gridBagConstraints.insets = new java.awt.Insets(15, 106, 0, 0);
         getContentPane().add(jLabel1, gridBagConstraints);
 
         jButton1.setText("Close");
@@ -111,10 +113,10 @@ public class CustomerCheckIn extends javax.swing.JFrame {
             }
         });
         gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 17;
+        gridBagConstraints.gridx = 18;
         gridBagConstraints.gridy = 1;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
-        gridBagConstraints.insets = new java.awt.Insets(21, 70, 0, 23);
+        gridBagConstraints.insets = new java.awt.Insets(21, 70, 0, 74);
         getContentPane().add(jButton1, gridBagConstraints);
 
         jLabel2.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
@@ -126,7 +128,7 @@ public class CustomerCheckIn extends javax.swing.JFrame {
         gridBagConstraints.gridheight = 2;
         gridBagConstraints.ipadx = 19;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
-        gridBagConstraints.insets = new java.awt.Insets(105, 56, 0, 0);
+        gridBagConstraints.insets = new java.awt.Insets(105, 106, 0, 0);
         getContentPane().add(jLabel2, gridBagConstraints);
 
         jTextField1.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
@@ -141,7 +143,7 @@ public class CustomerCheckIn extends javax.swing.JFrame {
         gridBagConstraints.gridwidth = 6;
         gridBagConstraints.ipadx = 176;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
-        gridBagConstraints.insets = new java.awt.Insets(19, 56, 0, 0);
+        gridBagConstraints.insets = new java.awt.Insets(19, 106, 0, 0);
         getContentPane().add(jTextField1, gridBagConstraints);
 
         jLabel3.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
@@ -151,7 +153,7 @@ public class CustomerCheckIn extends javax.swing.JFrame {
         gridBagConstraints.gridy = 7;
         gridBagConstraints.gridwidth = 4;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
-        gridBagConstraints.insets = new java.awt.Insets(0, 56, 0, 0);
+        gridBagConstraints.insets = new java.awt.Insets(0, 106, 0, 0);
         getContentPane().add(jLabel3, gridBagConstraints);
 
         jTextField2.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
@@ -161,7 +163,7 @@ public class CustomerCheckIn extends javax.swing.JFrame {
         gridBagConstraints.gridwidth = 6;
         gridBagConstraints.ipadx = 176;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
-        gridBagConstraints.insets = new java.awt.Insets(4, 56, 0, 0);
+        gridBagConstraints.insets = new java.awt.Insets(4, 106, 0, 0);
         getContentPane().add(jTextField2, gridBagConstraints);
 
         jLabel4.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
@@ -172,7 +174,7 @@ public class CustomerCheckIn extends javax.swing.JFrame {
         gridBagConstraints.gridwidth = 3;
         gridBagConstraints.ipadx = 9;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
-        gridBagConstraints.insets = new java.awt.Insets(13, 56, 0, 0);
+        gridBagConstraints.insets = new java.awt.Insets(13, 106, 0, 0);
         getContentPane().add(jLabel4, gridBagConstraints);
 
         jLabel5.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
@@ -182,7 +184,7 @@ public class CustomerCheckIn extends javax.swing.JFrame {
         gridBagConstraints.gridy = 15;
         gridBagConstraints.ipadx = 14;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
-        gridBagConstraints.insets = new java.awt.Insets(15, 56, 0, 0);
+        gridBagConstraints.insets = new java.awt.Insets(15, 106, 0, 0);
         getContentPane().add(jLabel5, gridBagConstraints);
 
         jTextField4.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
@@ -192,7 +194,7 @@ public class CustomerCheckIn extends javax.swing.JFrame {
         gridBagConstraints.gridwidth = 6;
         gridBagConstraints.ipadx = 176;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
-        gridBagConstraints.insets = new java.awt.Insets(16, 56, 0, 0);
+        gridBagConstraints.insets = new java.awt.Insets(16, 106, 0, 0);
         getContentPane().add(jTextField4, gridBagConstraints);
 
         jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Male", "Female", "Others" }));
@@ -207,7 +209,7 @@ public class CustomerCheckIn extends javax.swing.JFrame {
         gridBagConstraints.gridwidth = 6;
         gridBagConstraints.ipadx = 168;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
-        gridBagConstraints.insets = new java.awt.Insets(17, 56, 0, 0);
+        gridBagConstraints.insets = new java.awt.Insets(17, 106, 0, 0);
         getContentPane().add(jComboBox1, gridBagConstraints);
 
         jLabel6.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
@@ -298,7 +300,7 @@ public class CustomerCheckIn extends javax.swing.JFrame {
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 11;
         gridBagConstraints.gridy = 5;
-        gridBagConstraints.gridwidth = 6;
+        gridBagConstraints.gridwidth = 7;
         gridBagConstraints.ipadx = 154;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
         gridBagConstraints.insets = new java.awt.Insets(19, 137, 0, 0);
@@ -331,7 +333,7 @@ public class CustomerCheckIn extends javax.swing.JFrame {
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 11;
         gridBagConstraints.gridy = 9;
-        gridBagConstraints.gridwidth = 6;
+        gridBagConstraints.gridwidth = 7;
         gridBagConstraints.gridheight = 2;
         gridBagConstraints.ipadx = 150;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
@@ -382,7 +384,7 @@ public class CustomerCheckIn extends javax.swing.JFrame {
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 11;
         gridBagConstraints.gridy = 17;
-        gridBagConstraints.gridwidth = 6;
+        gridBagConstraints.gridwidth = 7;
         gridBagConstraints.gridheight = 2;
         gridBagConstraints.ipadx = 176;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
@@ -424,7 +426,7 @@ public class CustomerCheckIn extends javax.swing.JFrame {
         gridBagConstraints.ipadx = 51;
         gridBagConstraints.ipady = 9;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
-        gridBagConstraints.insets = new java.awt.Insets(18, 137, 203, 0);
+        gridBagConstraints.insets = new java.awt.Insets(18, 137, 154, 0);
         getContentPane().add(jButton3, gridBagConstraints);
 
         pack();
