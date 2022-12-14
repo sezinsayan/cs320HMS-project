@@ -442,6 +442,36 @@ public class CustomerCheckIn extends javax.swing.JFrame {
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {
         // TODO add your handling code here:
+        int id=1;
+        String name=jTextField1.getText();
+        String mobileNumber=jTextField2.getText();
+        String gender=(String)jComboBox1.getSelectedItem();
+        String email=jTextField3.getText();
+        String idProof=jTextField4.getText();
+        String address=jTextField5.getText();
+        String checkIn=jTextField6.getText();
+        String bed=(String)jComboBox2.getSelectedItem();
+        String roomType=(String)jComboBox3.getSelectedItem();
+        String roomNo=(String)jComboBox4.getSelectedItem();
+        String price=jTextField7.getText();
+
+        try{
+            ResultSet rs=Select.getData("select max(id) from customer");
+            while(rs.next())
+                id=rs.getInt(1);
+            id=id+1;
+
+            if(!price.equals("")){
+                InsertUpdateDelete.setData("update room set status='Booked' where roomNo='"+roomNo+"'", "");
+                InsertUpdateDelete.setData("insert into customer(id,name,mobileNumber,nationality,gender,email,idProof,address,checkIn,roomNo,bed,roomType,pricePerDay) values("+id+",'"+name+"','"+mobileNumber+"','"+gender+"','"+email+"','"+idProof+"','"+address+"','"+checkIn+"','"+roomNo+"','"+bed+"','"+roomType+"','"+price+"')", "Check IN SUCCESFUL");
+                setVisible(false);
+                new CustomerCheckIn().setVisible(true);
+            }
+        }
+
+        catch(Exception e){
+            JOptionPane.showMessageDialog(null,e);
+        }
     }
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {
