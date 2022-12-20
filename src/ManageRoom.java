@@ -179,17 +179,47 @@ public class ManageRoom extends javax.swing.JFrame {
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {
         // TODO add your handling code here:
-        String roomNo = jTextField1.getText();
-        String roomType =(String) jComboBox1.getSelectedItem();
-        String bed =(String) jComboBox2.getSelectedItem();
-        String price = jTextField2.getText();
+        if(jTextField1.getText().equals("")){
+            JOptionPane.showMessageDialog(this, "All Field is Requied");
+            jTextField1.requestFocus();
+        }
+        else if(jTextField2.getText().equals("")){
+            JOptionPane.showMessageDialog(this, "All Field is Requied");
+            jTextField2.requestFocus();
+        }
+        else{
 
-        String Query = "insert into room values('"+roomNo+"','"+roomType+"','"+bed+"','"+price+"','Not Booked')";
-        InsertUpdateDelete.setData(Query, "Successfully Updated");
-        setVisible(false);
-        new ManageRoom().setVisible(true);
+            PreparedStatement pst=null;
+            Statement st=null;
+            ResultSet rs=null;
+            try {
+                Class.forName("com.mysql.cj.jdbc.Driver");
+                java.sql.Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/hotel","root","4421");
+                st=con.createStatement(ResultSet.TYPE_SCROLL_SENSITIVE,ResultSet.CONCUR_READ_ONLY);
+                pst=con.prepareStatement("select * from room where roomNO=?");
+                pst.setString(1, jTextField1.getText());
+                rs=pst.executeQuery();
+                if(rs.next()){
+                    JOptionPane.showMessageDialog(this,"Room Number Already Exist");
+                }
+                else{
+                    String roomNo = jTextField1.getText();
+                    String roomType =(String) jComboBox1.getSelectedItem();
+                    String bed =(String) jComboBox2.getSelectedItem();
+                    String price = jTextField2.getText();
+
+                    String Query = "insert into room values('"+roomNo+"','"+roomType+"','"+bed+"','"+price+"','Not Booked')";
+                    InsertUpdateDelete.setData(Query, "Successfully Updated");
+                    setVisible(false);
+                    new ManageRoom().setVisible(true);
+
+                }
+
+            } catch (ClassNotFoundException | SQLException ex) {
+                //Logger.getLogger(Record.class.getName()).log(Level.SEVERE, null, ex);
+            }
+        }
     }
-
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {
         // TODO add your handling code here:
         setVisible(false);
@@ -261,4 +291,5 @@ public class ManageRoom extends javax.swing.JFrame {
     private javax.swing.JTextField jTextField2;
     // End of variables declaration
 }
+
 
