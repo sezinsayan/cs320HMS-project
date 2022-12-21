@@ -190,7 +190,6 @@ public class ManageRoom extends javax.swing.JFrame {
         else{
 
             PreparedStatement pst=null;
-            Statement st=null;
             ResultSet rs=null;
             try {
                 java.sql.Connection con=ConnectionProvider.getCon();
