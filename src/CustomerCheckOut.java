@@ -480,6 +480,9 @@ public class CustomerCheckOut extends javax.swing.JFrame {
                 InsertUpdateDelete.setData(Query,"");
                 Query="update room set Status='Not Booked' where roomNo='"+roomNo+"'";
                 InsertUpdateDelete.setData(Query,"");
+
+                setVisible(false);
+                new CustomerCheckOut().setVisible(true);
         }
 
         private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {
