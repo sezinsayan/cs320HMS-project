@@ -462,8 +462,8 @@ public class CustomerCheckIn extends javax.swing.JFrame {
             id=id+1;
 
             if(!price.equals("")){
-                InsertUpdateDelete.setData("update room set status='Booked' where roomNo='"+roomNo+"'", "");
-                InsertUpdateDelete.setData("insert into customer(id,name,mobileNumber,nationality,gender,email,idProof,address,checkIn,roomNo,bed,roomType,pricePerDay) values("+id+",'"+name+"','"+mobileNumber+"','"+gender+"','"+email+"','"+idProof+"','"+address+"','"+checkIn+"','"+roomNo+"','"+bed+"','"+roomType+"','"+price+"')", "Check IN SUCCESFUL");
+                InsertUpdateDelete.setData("update room set status='Booked' where roomNo = '"+roomNo+"'", "");
+                InsertUpdateDelete.setData("insert into customer(id,name,mobileNumber,gender,email,idProof,address,checkIn,roomNo,bed,roomType,pricePerDay) values("+id+",'"+name+"','"+mobileNumber+"','"+gender+"','"+email+"','"+idProof+"','"+address+"','"+checkIn+"','"+roomNo+"','"+bed+"','"+roomType+"','"+price+"')", "CHECK IN SUCCESFUL");
                 setVisible(false);
                 new CustomerCheckIn().setVisible(true);
             }
@@ -499,7 +499,7 @@ public class CustomerCheckIn extends javax.swing.JFrame {
         // TODO add your handling code here:
         roomNo= (String)jComboBox4.getSelectedItem();
         try{
-            ResultSet rs=Select.getData("select *from where roomNo='"+roomNo+"'");
+            ResultSet rs=Select.getData("Select * from room where roomNo='"+roomNo+"'");
             while(rs.next()){
                 jTextField7.setText(rs.getString(4));
             }
