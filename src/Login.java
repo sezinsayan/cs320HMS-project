@@ -8,6 +8,8 @@ import project.Select;
 import javax.swing.*;
 import java.sql.ResultSet;
 import java.util.Arrays;
+import java.sql.*;
+import project.Select;
 
 /**
  *

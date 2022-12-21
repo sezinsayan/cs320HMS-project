@@ -29,7 +29,7 @@ public class CustomerCheckIn extends javax.swing.JFrame {
     String bed;
     String roomType;
     String roomNo;
-    String Price;
+    String price;
 
     public void roomDetails(){
         jComboBox4.removeAllItems();
