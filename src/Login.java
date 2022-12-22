@@ -126,14 +126,66 @@ public class Login extends javax.swing.JFrame {
         String email = jTextField1.getText();
         char[] password = jPasswordField1.getPassword();
         char[] adminPassword ={'1','2','3','4'};
+        char[] erenPassword ={'e','r','e','n','1','2','3','4'};
+        char[] ismailPassword ={'i','s','m','a','i','l','1','2','3','4'};
+        char[] dogaPassword ={'d','o','g','a','1','2','3','4'};
+        char[] sezinPassword ={'s','e','z','i','n','1','2','3','4'};
+        char[] pasanPassword ={'p','a','s','a','n','1','2','3','4'};
+        char[] emircanPassword ={'e','m','i','r','c','a','n','1','2','3','4'};
 
 
         if (email.equals("") || password.length==0){
+            check = 1;
             JOptionPane.showMessageDialog(null, "Every Field Is Required!");
         }
         else if (email.equals("hms") && Arrays.equals(password, adminPassword)){
             // admin login
+            check = 1;
             JOptionPane.showMessageDialog(null, "ADMIN LOGIN");
+            setVisible(false);
+            new homePagee().setVisible(true);
+        }
+        else if (email.equals("eren") && Arrays.equals(password, erenPassword)){
+            // admin login
+            check = 1;
+            JOptionPane.showMessageDialog(null, "WELCOME EREN");
+            setVisible(false);
+            new homePagee().setVisible(true);
+        }
+        else if (email.equals("ismail") && Arrays.equals(password, ismailPassword)){
+            // admin login
+            check = 1;
+            JOptionPane.showMessageDialog(null, "WELCOME İSMAİL");
+            setVisible(false);
+            new homePagee().setVisible(true);
+        }
+        else if (email.equals("doga") && Arrays.equals(password, dogaPassword)){
+            // admin login
+            check = 1;
+            JOptionPane.showMessageDialog(null, "WELCOME DOĞA");
+            setVisible(false);
+            new homePagee().setVisible(true);
+        }
+        else if (email.equals("sezin") && Arrays.equals(password, sezinPassword)){
+            // admin login
+            check = 1;
+            JOptionPane.showMessageDialog(null, "WELCOME SEZİN");
+            setVisible(false);
+            new homePagee().setVisible(true);
+        }
+        else if (email.equals("pasan") && Arrays.equals(password, pasanPassword)){
+            // admin login
+            check = 1;
+            JOptionPane.showMessageDialog(null, "WELCOME PAŞAN");
+            setVisible(false);
+            new homePagee().setVisible(true);
+        }
+        else if (email.equals("emircan") && Arrays.equals(password, emircanPassword)){
+            // admin login
+            check = 1;
+            JOptionPane.showMessageDialog(null, "WELCOME EMIRCAN");
+            setVisible(false);
+            new homePagee().setVisible(true);
         }
         else {
             ResultSet rs = Select.getData("Select * from users where email='"+email+"' and password ='"+ Arrays.toString(password) +"'");
