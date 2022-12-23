@@ -63,7 +63,37 @@ public class Service {
         return check;
     }
 
-    public static void CustomerInfo(String roomNo, String price) {
+    public static int AddRoom(String roomNo, String price,String roomType,String bed) {
+        int sin = 0;
 
+        if (roomNo.equals("")) {
+            JOptionPane.showMessageDialog(null, "All Field is Required");
+            sin =1;
+        } else if (price.equals("")) {
+            JOptionPane.showMessageDialog(null, "All Field is Required");
+            sin=2;
+        } else {
+
+            PreparedStatement pst = null;
+            ResultSet rs = null;
+            try {
+                java.sql.Connection con = ConnectionProvider.getCon();
+                pst = con.prepareStatement("select * from room where roomNO=?");
+                pst.setString(1, roomNo);
+                rs = pst.executeQuery();
+                if (rs.next()) {
+                    JOptionPane.showMessageDialog(null, "Room Number Already Exist");
+                } else {
+                    String Query = "insert into room values('" + roomNo + "','" + roomType + "','" + bed + "','" + price + "','Not Booked')";
+                    InsertUpdateDelete.setData(Query, "Successfully Updated");
+                    sin=3;
+
+                }
+
+            } catch (Exception e) {
+
+            }
+        }
+        return sin;
     }
 }

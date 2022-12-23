@@ -178,44 +178,21 @@ public class ManageRoom extends javax.swing.JFrame {
     }
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {
-        // TODO add your handling code here:
-        if(jTextField1.getText().equals("")){
-            JOptionPane.showMessageDialog(this, "All Field is Requied");
+
+        String roomNo = jTextField1.getText();
+        String roomType =(String) jComboBox1.getSelectedItem();
+        String bed =(String) jComboBox2.getSelectedItem();
+        String price = jTextField2.getText();
+        if(Service.AddRoom(roomNo,price,roomType,bed)==1)
             jTextField1.requestFocus();
-        }
-        else if(jTextField2.getText().equals("")){
-            JOptionPane.showMessageDialog(this, "All Field is Requied");
+        else if(Service.AddRoom(roomNo,price,roomType,bed)==2)
             jTextField2.requestFocus();
+        else if(Service.AddRoom(roomNo,price,roomType,bed)==3){
+            setVisible(false);
+            new ManageRoom().setVisible(true);
         }
-        else{
 
-            PreparedStatement pst=null;
-            ResultSet rs=null;
-            try {
-                java.sql.Connection con=ConnectionProvider.getCon();
-                pst=con.prepareStatement("select * from room where roomNO=?");
-                pst.setString(1, jTextField1.getText());
-                rs=pst.executeQuery();
-                if(rs.next()){
-                    JOptionPane.showMessageDialog(this,"Room Number Already Exist");
-                }
-                else{
-                    String roomNo = jTextField1.getText();
-                    String roomType =(String) jComboBox1.getSelectedItem();
-                    String bed =(String) jComboBox2.getSelectedItem();
-                    String price = jTextField2.getText();
 
-                    String Query = "insert into room values('"+roomNo+"','"+roomType+"','"+bed+"','"+price+"','Not Booked')";
-                    InsertUpdateDelete.setData(Query, "Successfully Updated");
-                    setVisible(false);
-                    new ManageRoom().setVisible(true);
-
-                }
-
-            } catch (Exception e) {
-
-            }
-        }
     }
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {
         // TODO add your handling code here:

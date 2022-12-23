@@ -82,7 +82,7 @@ public class CustomerCheckOut extends javax.swing.JFrame {
                 });
                 getContentPane().setLayout(new java.awt.GridBagLayout());
 
-                jLabel1.setFont(new java.awt.Font("Algerian", 1, 14)); // NOI18N
+                jLabel1.setFont(new java.awt.Font("Plantagenet Cherokee", 1, 14)); // NOI18N
                 jLabel1.setForeground(new java.awt.Color(255, 153, 0));
                 jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Customer Check Out.png"))); // NOI18N
                 jLabel1.setText("Customer Check Out");
@@ -366,7 +366,7 @@ public class CustomerCheckOut extends javax.swing.JFrame {
                 getContentPane().add(jButton3, gridBagConstraints);
 
                 jButton4.setBackground(new java.awt.Color(102, 255, 255));
-                jButton4.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+                jButton4.setFont(new java.awt.Font("Plantagenet Cherokee", 1, 14)); // NOI18N
                 jButton4.setForeground(new java.awt.Color(255, 255, 255));
                 jButton4.setText("Clear");
                 jButton4.addActionListener(new java.awt.event.ActionListener() {

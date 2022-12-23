@@ -11,5 +11,14 @@ public class ApplicationTests {
         Service.LoginPageData(email,password);
 
     }
+    @Test
+    public void AddRoom(){
+        String roomNo="505";
+        String price="800";
+        String roomType="AC";
+        String bed="Double";
+        Service.AddRoom(roomNo,price,roomType,bed);
+
+    }
 
 }
