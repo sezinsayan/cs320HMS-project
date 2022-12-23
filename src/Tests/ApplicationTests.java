@@ -1,7 +1,12 @@
 package Tests;
 
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 import project.*;
+
+import java.sql.ResultSet;
+import java.sql.SQLException;
+
+import static org.junit.Assert.assertEquals;
 
 public class ApplicationTests {
     @Test
@@ -19,6 +24,15 @@ public class ApplicationTests {
         String bed="Double";
         Service.AddRoom(roomNo,price,roomType,bed);
 
+    }
+
+    @Test
+    public void InsertAndSelectCustomer() throws SQLException {
+        int id = 99999;
+
+        Service.InsertCustomer(id, "name", "123", "male", "asd@gmail.com", "1", "street", "yes", "100", "2", "ac", "120");
+        ResultSet rs = Service.SelectCustomer("100");
+        assertEquals(rs.getInt("id"), id);
     }
 
 }

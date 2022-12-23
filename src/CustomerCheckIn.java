@@ -463,7 +463,7 @@ public class CustomerCheckIn extends javax.swing.JFrame {
 
             if(!price.equals("")){
                 InsertUpdateDelete.setData("update room set status='Booked' where roomNo = '"+roomNo+"'", "");
-                InsertUpdateDelete.setData("insert into customer(id,name,mobileNumber,gender,email,idProof,address,checkIn,roomNo,bed,roomType,pricePerDay) values("+id+",'"+name+"','"+mobileNumber+"','"+gender+"','"+email+"','"+idProof+"','"+address+"','"+checkIn+"','"+roomNo+"','"+bed+"','"+roomType+"','"+price+"')", "CHECK IN SUCCESFUL");
+                Service.InsertCustomer(id, name, mobileNumber, gender, email, idProof, address, checkIn, roomNo, bed, roomType, price);
                 setVisible(false);
                 new CustomerCheckIn().setVisible(true);
             }

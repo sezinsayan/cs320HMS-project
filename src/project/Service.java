@@ -96,4 +96,13 @@ public class Service {
         }
         return sin;
     }
+
+    public static void InsertCustomer(int id, String name, String mobileNumber, String gender, String email, String idProof, String address, String checkIn, String roomNo, String bed, String roomType, String price){
+        InsertUpdateDelete.setData("insert into customer(id,name,mobileNumber,gender,email,idProof,address,checkIn,roomNo,bed,roomType,pricePerDay) values("+id+",'"+name+"','"+mobileNumber+"','"+gender+"','"+email+"','"+idProof+"','"+address+"','"+checkIn+"','"+roomNo+"','"+bed+"','"+roomType+"','"+price+"')", "CHECK IN SUCCESFUL");
+
+    }
+
+    public static ResultSet SelectCustomer(String roomNo){
+        return Select.getData("select *from customer where roomNo='"+roomNo+"' and checkout is NULL");
+    }
 }
