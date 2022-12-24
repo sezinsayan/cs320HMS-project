@@ -64,6 +64,17 @@ public class ApplicationTests {
 
 
     }
+    @Test
+    public void CheckIn() throws SQLException {
+
+        Service.AddRoom("200", "100", "AC", "2");
+        Service.CheckIn(0,"some_name","1234","female","name@gmail.com","1","street","yes","2","AC","200","100");
+
+        ResultSet rs = Service.SelectRoomByRoomNo("200");
+        if (rs.next()) {
+            assertEquals(rs.getString("status"), "Booked");
+        }
+    }
 
 
 }
