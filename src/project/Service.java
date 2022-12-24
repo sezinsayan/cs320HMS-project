@@ -124,4 +124,18 @@ public class Service {
         }
         return false;
     }
+
+    public static ResultSet SelectRoomByRoomNo(String roomNo){
+        return Select.getData("select *from room where roomNo='"+roomNo+"'");
+    }
+
+    public static void CheckOut(String numberOfDaysStay, String totalAmount, String checkOut, int id, String roomNo){
+        String Query;
+
+        Query="update customer set numberOfDaysStay='"+numberOfDaysStay+"',totalAmount='"+totalAmount+"', checkout='"+checkOut+"' where id='"+id+"'";
+        InsertUpdateDelete.setData(Query,"");
+        Query="update room set Status='Not Booked' where roomNo='"+roomNo+"'";
+        InsertUpdateDelete.setData(Query,"");
+    }
+
 }

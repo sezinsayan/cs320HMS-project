@@ -421,7 +421,7 @@ public class CustomerCheckOut extends javax.swing.JFrame {
                 String roomNo=jTextField1.getText();
                 try
                 {
-                        ResultSet rs=Select.getData("select *from customer where roomNo='"+roomNo+"' and checkout is NULL");
+                        ResultSet rs=Service.SelectCustomer(roomNo);
                         if(rs.next()){
                                 jTextField1.setEditable(false);
                                 id=rs.getInt(1);
@@ -476,10 +476,7 @@ public class CustomerCheckOut extends javax.swing.JFrame {
                 String numberOfDaysStay=jTextField7.getText();
                 String totalAmount=jTextField8.getText();
                 roomNo=jTextField1.getText();
-                Query="update customer set numberOfDaysStay='"+numberOfDaysStay+"',totalAmount='"+totalAmount+"', checkout='"+checkOut+"' where id='"+id+"'";
-                InsertUpdateDelete.setData(Query,"");
-                Query="update room set Status='Not Booked' where roomNo='"+roomNo+"'";
-                InsertUpdateDelete.setData(Query,"");
+                Service.CheckOut(numberOfDaysStay, totalAmount, checkOut, id, roomNo);
 
                 setVisible(false);
                 new CustomerCheckOut().setVisible(true);
