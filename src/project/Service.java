@@ -105,4 +105,23 @@ public class Service {
     public static ResultSet SelectCustomer(String roomNo){
         return Select.getData("select *from customer where roomNo='"+roomNo+"' and checkout is NULL");
     }
+    public static boolean CheckIn(int id, String name, String mobileNumber,String gender, String email,String idProof,String address, String checkIn, String bed, String roomType, String roomNo, String price){
+        try {
+            ResultSet rs=Select.getData("select max(id) from customer");
+            while(rs.next())
+                id=rs.getInt(1);
+            id=id+1;
+
+            if(!price.equals("")){
+                InsertUpdateDelete.setData("update room set status='Booked' where roomNo = '"+roomNo+"'", "");
+                Service.InsertCustomer(id, name, mobileNumber, gender, email, idProof, address, checkIn, roomNo, bed, roomType, price);
+                return true;
+            }
+        }
+        catch (Exception e){
+            JOptionPane.showMessageDialog(null,e);
+            return false;
+        }
+        return false;
+    }
 }

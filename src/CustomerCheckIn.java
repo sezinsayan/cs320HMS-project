@@ -455,7 +455,12 @@ public class CustomerCheckIn extends javax.swing.JFrame {
         String roomNo=(String)jComboBox4.getSelectedItem();
         String price=jTextField7.getText();
 
-        try{
+        if(Service.CheckIn(id,name,mobileNumber,gender,email,idProof,address,checkIn,bed,roomType,roomNo,price)){
+            setVisible(false);
+            new CustomerCheckIn().setVisible(true);
+        }
+
+        /*try{
             ResultSet rs=Select.getData("select max(id) from customer");
             while(rs.next())
                 id=rs.getInt(1);
@@ -471,7 +476,7 @@ public class CustomerCheckIn extends javax.swing.JFrame {
 
         catch(Exception e){
             JOptionPane.showMessageDialog(null,e);
-        }
+        }*/
     }
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {

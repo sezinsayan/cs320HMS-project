@@ -32,7 +32,9 @@ public class ApplicationTests {
 
         Service.InsertCustomer(id, "name", "123", "male", "asd@gmail.com", "1", "street", "yes", "100", "2", "ac", "120");
         ResultSet rs = Service.SelectCustomer("100");
-        assertEquals(rs.getInt("id"), id);
+        if (rs.next()) {
+            assertEquals(rs.getInt("id"), id);
+        }
     }
 
 }
