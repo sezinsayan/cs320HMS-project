@@ -17,6 +17,12 @@ public class ApplicationTests {
 
     }
     @Test
+    public void SuccessLogin(){
+        String email="eren";
+        char[] password={'e','r','e','n','1','2','3','4'};
+        Service.LoginPageData(email,password);
+    }
+    @Test
     public void AddRoom(){
         String roomNo="505";
         String price="800";
