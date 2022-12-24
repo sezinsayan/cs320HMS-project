@@ -10,6 +10,7 @@ import java.sql.ResultSet;
 import java.util.Arrays;
 import java.sql.*;
 import project.Select;
+import project.Service;
 
 /**
  *
@@ -122,35 +123,13 @@ public class Login extends javax.swing.JFrame {
     }
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {
-        int check = 0;
         String email = jTextField1.getText();
         char[] password = jPasswordField1.getPassword();
-        char[] adminPassword ={'1','2','3','4'};
+        if(Service.LoginPageData(email,password)==true){
+            setVisible(false);
+            new homePagee().setVisible(true);
+        }
 
-
-        if (email.equals("") || password.length==0){
-            JOptionPane.showMessageDialog(null, "Every Field Is Required!");
-        }
-        else if (email.equals("hms") && Arrays.equals(password, adminPassword)){
-            // admin login
-            JOptionPane.showMessageDialog(null, "ADMIN LOGIN");
-        }
-        else {
-            ResultSet rs = Select.getData("Select * from users where email='"+email+"' and password ='"+ Arrays.toString(password) +"'");
-            try {
-                if (rs== null) {
-                    JOptionPane.showMessageDialog(null, "Such User Doesn't Exist!");
-                }
-                else if (rs.next()){
-                    if (rs.getString(4).equals("true")){
-                        setVisible(false);
-                        new homePagee().setVisible(true);
-                    }
-                }
-            } catch (Exception e){
-                JOptionPane.showMessageDialog(null, e);
-            }
-        }
     }
 
     private void jPasswordField1ActionPerformed(java.awt.event.ActionEvent evt) {
