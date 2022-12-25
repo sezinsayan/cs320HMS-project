@@ -3,9 +3,12 @@ package project;
 import javax.swing.*;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.util.ArrayList;
 import java.util.Arrays;
 public class Service {
     public static boolean LoginPageData(String email, char[] password) {
+
+
         boolean check = false;
         char[] adminPassword = {'1', '2', '3', '4'};
         char[] erenPassword = {'e', 'r', 'e', 'n', '1', '2', '3', '4'};
@@ -14,7 +17,6 @@ public class Service {
         char[] sezinPassword = {'s', 'e', 'z', 'i', 'n', '1', '2', '3', '4'};
         char[] pasanPassword = {'p', 'a', 's', 'a', 'n', '1', '2', '3', '4'};
         char[] emircanPassword = {'e', 'm', 'i', 'r', 'c', 'a', 'n', '1', '2', '3', '4'};
-
 
         if (email.equals("") || password.length == 0) {
             JOptionPane.showMessageDialog(null, "Every Field Is Required!");
@@ -47,18 +49,8 @@ public class Service {
             check = true;
             JOptionPane.showMessageDialog(null, "WELCOME EMIRCAN");
         } else {
-            ResultSet rs = Select.getData("Select * from users where email='" + email + "' and password ='" + Arrays.toString(password) + "'");
-            try {
-                if (rs == null) {
                     JOptionPane.showMessageDialog(null, "Such User Doesn't Exist!");
-                } else if (rs.next()) {
-                    if (rs.getString(4).equals("true")) {
-                        check = true;
-                    }
-                }
-            } catch (Exception e) {
-                JOptionPane.showMessageDialog(null, e);
-            }
+
         }
         return check;
     }
