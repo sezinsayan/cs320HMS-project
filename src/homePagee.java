@@ -36,17 +36,17 @@ public class homePagee extends javax.swing.JFrame {
         exitButton = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setBackground(new java.awt.Color(255, 153, 153));
+        setBackground(new java.awt.Color(111, 84, 140));
         setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         setLocationByPlatform(true);
         setUndecorated(true);
         setPreferredSize(new java.awt.Dimension(1366, 768));
         setResizable(false);
 
-        manageRoomButton.setBackground(new java.awt.Color(240, 240, 240));
+        manageRoomButton.setBackground(new java.awt.Color(111, 84, 140));
         manageRoomButton.setFont(new java.awt.Font("Plantagenet Cherokee", 1, 14)); // NOI18N
         manageRoomButton.setText("Manage Room");
-        manageRoomButton.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(255, 153, 51)));
+        manageRoomButton.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(111, 84, 140)));
         manageRoomButton.setMargin(new java.awt.Insets(2, 2, 2, 2));
         manageRoomButton.setSize(new java.awt.Dimension(100, 45));
         manageRoomButton.addActionListener(new java.awt.event.ActionListener() {
@@ -55,10 +55,10 @@ public class homePagee extends javax.swing.JFrame {
             }
         });
 
-        checkInButton.setBackground(new java.awt.Color(240, 240, 240));
+        checkInButton.setBackground(new java.awt.Color(111, 84, 140));
         checkInButton.setFont(new java.awt.Font("Plantagenet Cherokee", 1, 14)); // NOI18N
         checkInButton.setText("Customer Check In");
-        checkInButton.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(255, 153, 51)));
+        checkInButton.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(111, 84, 140)));
         checkInButton.setMargin(new java.awt.Insets(2, 2, 2, 2));
         checkInButton.setSize(new java.awt.Dimension(100, 45));
         checkInButton.addActionListener(new java.awt.event.ActionListener() {
@@ -67,10 +67,10 @@ public class homePagee extends javax.swing.JFrame {
             }
         });
 
-        checkOutButton.setBackground(new java.awt.Color(240, 240, 240));
+        checkOutButton.setBackground(new java.awt.Color(111, 84, 140));
         checkOutButton.setFont(new java.awt.Font("Plantagenet Cherokee", 1, 14)); // NOI18N
         checkOutButton.setText("Customer Check Out");
-        checkOutButton.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(255, 153, 51)));
+        checkOutButton.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(111, 84, 140)));
         checkOutButton.setMargin(new java.awt.Insets(2, 2, 2, 2));
         checkOutButton.setSize(new java.awt.Dimension(100, 45));
         checkOutButton.addActionListener(new java.awt.event.ActionListener() {
@@ -79,10 +79,10 @@ public class homePagee extends javax.swing.JFrame {
             }
         });
 
-        logoutButton.setBackground(new java.awt.Color(240, 240, 240));
+        logoutButton.setBackground(new java.awt.Color(111, 84, 140));
         logoutButton.setFont(new java.awt.Font("Plantagenet Cherokee", 1, 14)); // NOI18N
         logoutButton.setText("LOGOUT");
-        logoutButton.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(255, 153, 51)));
+        logoutButton.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(111, 84, 140)));
         logoutButton.setMargin(new java.awt.Insets(2, 2, 2, 2));
         logoutButton.setSize(new java.awt.Dimension(100, 45));
         logoutButton.addActionListener(new java.awt.event.ActionListener() {
@@ -91,10 +91,10 @@ public class homePagee extends javax.swing.JFrame {
             }
         });
 
-        exitButton.setBackground(new java.awt.Color(240, 240, 240));
+        exitButton.setBackground(new java.awt.Color(111, 84, 140));
         exitButton.setFont(new java.awt.Font("Plantagenet Cherokee", 1, 14)); // NOI18N
         exitButton.setText("EXIT");
-        exitButton.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(255, 153, 51)));
+        exitButton.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(111, 84, 140)));
         exitButton.setMargin(new java.awt.Insets(2, 2, 2, 2));
         exitButton.setSize(new java.awt.Dimension(100, 45));
         exitButton.addActionListener(new java.awt.event.ActionListener() {

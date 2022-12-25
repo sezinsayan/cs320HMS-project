@@ -94,7 +94,7 @@ public class CustomerCheckIn extends javax.swing.JFrame {
         getContentPane().setLayout(new java.awt.GridBagLayout());
 
         jLabel1.setFont(new java.awt.Font("Algerian", 1, 14)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(153, 0, 0));
+        jLabel1.setForeground(new java.awt.Color(111, 84, 140));
         jLabel1.setText("Customer Check In");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 1;
@@ -391,7 +391,7 @@ public class CustomerCheckIn extends javax.swing.JFrame {
         gridBagConstraints.insets = new java.awt.Insets(30, 137, 0, 0);
         getContentPane().add(jTextField7, gridBagConstraints);
 
-        jButton2.setBackground(new java.awt.Color(153, 0, 0));
+        jButton2.setBackground(new java.awt.Color(111, 84, 140));
         jButton2.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jButton2.setForeground(new java.awt.Color(255, 255, 255));
         jButton2.setText("Allocate");
@@ -410,7 +410,7 @@ public class CustomerCheckIn extends javax.swing.JFrame {
         gridBagConstraints.insets = new java.awt.Insets(33, 137, 0, 0);
         getContentPane().add(jButton2, gridBagConstraints);
 
-        jButton3.setBackground(new java.awt.Color(153, 0, 0));
+        jButton3.setBackground(new java.awt.Color(111, 84, 140));
         jButton3.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jButton3.setForeground(new java.awt.Color(255, 255, 255));
         jButton3.setText("Clear");
