@@ -83,7 +83,7 @@ public class CustomerCheckOut extends javax.swing.JFrame {
                 getContentPane().setLayout(new java.awt.GridBagLayout());
 
                 jLabel1.setFont(new java.awt.Font("Plantagenet Cherokee", 1, 14)); // NOI18N
-                jLabel1.setForeground(new java.awt.Color(255, 153, 0));
+                jLabel1.setForeground(new java.awt.Color(111, 84, 140));
                 jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Customer Check Out.png"))); // NOI18N
                 jLabel1.setText("Customer Check Out");
                 jLabel1.setToolTipText("");
@@ -135,7 +135,7 @@ public class CustomerCheckOut extends javax.swing.JFrame {
                 gridBagConstraints.insets = new java.awt.Insets(25, 18, 0, 0);
                 getContentPane().add(jTextField1, gridBagConstraints);
 
-                jButton2.setBackground(new java.awt.Color(102, 255, 255));
+                jButton2.setBackground(new java.awt.Color(111, 84, 140));
                 jButton2.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
                 jButton2.setForeground(new java.awt.Color(255, 255, 255));
                 jButton2.setText("Search");
@@ -349,7 +349,7 @@ public class CustomerCheckOut extends javax.swing.JFrame {
                 gridBagConstraints.insets = new java.awt.Insets(20, 110, 0, 0);
                 getContentPane().add(jTextField9, gridBagConstraints);
 
-                jButton3.setBackground(new java.awt.Color(102, 255, 255));
+                jButton3.setBackground(new java.awt.Color(111, 84, 140));
                 jButton3.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
                 jButton3.setForeground(new java.awt.Color(255, 255, 255));
                 jButton3.setText("Check Out");
@@ -365,7 +365,7 @@ public class CustomerCheckOut extends javax.swing.JFrame {
                 gridBagConstraints.insets = new java.awt.Insets(24, 20, 0, 0);
                 getContentPane().add(jButton3, gridBagConstraints);
 
-                jButton4.setBackground(new java.awt.Color(102, 255, 255));
+                jButton4.setBackground(new java.awt.Color(111, 84, 140));
                 jButton4.setFont(new java.awt.Font("Plantagenet Cherokee", 1, 14)); // NOI18N
                 jButton4.setForeground(new java.awt.Color(255, 255, 255));
                 jButton4.setText("Clear");

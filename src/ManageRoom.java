@@ -183,11 +183,12 @@ public class ManageRoom extends javax.swing.JFrame {
         String roomType =(String) jComboBox1.getSelectedItem();
         String bed =(String) jComboBox2.getSelectedItem();
         String price = jTextField2.getText();
-        if(Service.AddRoom(roomNo,price,roomType,bed)==1)
+        int temp = Service.AddRoom(roomNo,price,roomType,bed);
+        if(temp==1)
             jTextField1.requestFocus();
-        else if(Service.AddRoom(roomNo,price,roomType,bed)==2)
+        else if(temp==2)
             jTextField2.requestFocus();
-        else if(Service.AddRoom(roomNo,price,roomType,bed)==3){
+        else if(temp==3){
             setVisible(false);
             new ManageRoom().setVisible(true);
         }
